@@ -27,20 +27,13 @@ public class Reader {
 		   
 		   
 		   
-		   for (int line = 0; line <= h; line++){
-			   for (int i = 0; i< w; i++){    //-1 por conta dos
-				   int s = br.read();
-				   if (s>0){
-					   char value = (char)s;
-					   if (value == '#'){
-						   value = 'X';
-					   }
-					   
-						   System.out.print(value);
+		   for (int line = 0; line < h; line++){
+			   for (int i = 0; i< w; i++){
+				   char value = (char)br.read();
+				   if (value == '#'){
+					   value = 'X';
 				   }
-				   
-				   
-				   
+				   System.out.print(value);
 				   
 			   }
 			   ;
